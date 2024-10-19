@@ -5,9 +5,9 @@ import Sign from './components/Sign';
 import Login from './components/Login';
 import Home from './components/Home';
 import Dashboard from './components/Dashboard';
+import TeacherRegister from './components/TeacherSign';
 import Credentails from './components/Credentials';
 import TeacherLogin from './components/TeacherLogin';
-import TeacherRegister from './components/teacherRegister';
 
 function App() {
   return (

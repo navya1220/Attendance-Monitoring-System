@@ -1,5 +1,6 @@
 const TeacherModel = require('../models/Teacher');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
+
 const jwt = require('jsonwebtoken'); 
 const registerTeacher = async (req, res) => {
   try {

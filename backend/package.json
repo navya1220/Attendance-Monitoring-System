@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
@@ -9,6 +8,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.7.1"
   },
+ 
   "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
@@ -19,5 +19,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "engines": {
+    "node": "20.x"
+  }
 }

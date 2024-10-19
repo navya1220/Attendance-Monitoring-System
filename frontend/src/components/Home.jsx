@@ -12,7 +12,7 @@ function Home() {
 
     // Fetch students when the component is mounted
     useEffect(() => {
-        axios.get('http://localhost:3001/api/students')
+        axios.get('http://localhost:4000/api/students')
             .then(response => setStudents(response.data))
             .catch(err => {
                 console.error('Failed to fetch students:', err);

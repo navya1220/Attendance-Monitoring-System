@@ -11,7 +11,7 @@ function Sign() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('https://attendance-monitoring-system-2.onrender.com/api/students/register', { name, email, password })
+        axios.post('http://localhost:3001/api/students/register', { name, email, password })
             .then(result => {
                 console.log(result);
                 navigate('/login');

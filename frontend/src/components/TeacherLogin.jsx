@@ -10,7 +10,7 @@ function TeacherLogin() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('https://attendance-monitoring-system-2.onrender.com/api/teachers/login', { email, password })
+        axios.post('http://localhost:3001/api/teachers/login', { email, password })
         .then(result => {
             console.log(result);
             if (result.status === 200) {

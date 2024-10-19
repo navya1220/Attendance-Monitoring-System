@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 // MongoDB connection
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://navyakalla1111:12345@ams.pb2hq.mongodb.net/?retryWrites=true&w=majority&appName=AMS', { useNewUrlParser: true, useUnifiedTopology: true ,})
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.error("MongoDB connection error: ", err));
 

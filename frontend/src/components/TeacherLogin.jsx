@@ -10,7 +10,7 @@ function TeacherLogin() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3001/api/teachers/login', { email, password })
+        axios.post('attendance-monitoring-system-alpha.vercel.app/api/teachers/login', { email, password })
         .then(result => {
             console.log(result);
             if (result.status === 200) {

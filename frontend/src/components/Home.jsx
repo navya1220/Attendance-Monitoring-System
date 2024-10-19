@@ -12,7 +12,7 @@ function Home() {
 
     // Fetch students when the component is mounted
     useEffect(() => {
-        axios.get('http://localhost:3001/api/students')
+        axios.get('attendance-monitoring-system-alpha.vercel.app/api/students')
             .then(response => setStudents(response.data))
             .catch(err => {
                 console.error('Failed to fetch students:', err);
@@ -30,7 +30,7 @@ function Home() {
     // Handle submit button click
     const handleSubmit = () => {
         const attendancePromises = students.map(student => {
-            return axios.post('http://localhost:3001/api/attendance', {
+            return axios.post('attendance-monitoring-system-alpha.vercel.app/api/attendance', {
                 studentId: student._id,
                 date: selectedDate,
                 status: attendance[student._id] || 'absent',

@@ -11,7 +11,7 @@ function TeacherRegister() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:4000/api/teachers/register', { name, email, password, subject })
+        axios.post('https://attendance-backend-x2do.onrender.com/api/teachers/register', { name, email, password, subject })
             .then(result => {
                 console.log(result);
                 navigate('/teacher/login');  // Navigate to teacher login page after successful registration

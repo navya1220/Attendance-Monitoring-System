@@ -10,7 +10,7 @@ function TeacherLogin() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:4000/api/teachers/login', { email, password })
+        axios.post('https://attendance-backend-x2do.onrender.com/api/teachers/login', { email, password })
         .then(result => {
             console.log(result);
             if (result.status === 200) {

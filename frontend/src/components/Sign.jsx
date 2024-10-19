@@ -11,7 +11,7 @@ function Sign() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:4000/api/students/register', { name, email, password })
+        axios.post('https://attendance-backend-x2do.onrender.com/api/students/register', { name, email, password })
             .then(result => {
                 console.log(result);
                 navigate('/login');

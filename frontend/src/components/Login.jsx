@@ -10,7 +10,7 @@ function Login() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('attendance-monitoring-system-alpha.vercel.app/api/students/login', { email, password })
+        axios.post('https://attendance-monitoring-system-2.onrender.com/api/students/login', { email, password })
         .then(result => {
             console.log(result);
             if (result.data.status === "Success") {

@@ -21,8 +21,8 @@ function TeacherRegister() {
 
     return (
         <div className="d-flex justify-content-center align-items-center bg-secondary vh-100">
-            <div className="bg-white p-3 rounded w-25">
-                <h1>Register</h1>
+            <div className="bg-white p-3 rounded w-100 w-md-50 w-lg-25" style={{ maxWidth: "400px" }}>
+                <h1 className="text-center">Register</h1>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-3">
                         <label htmlFor="name">
@@ -76,7 +76,7 @@ function TeacherRegister() {
                         Register
                     </button>
                 </form>
-                <p className="mt-3">Already Have an Account?</p>
+                <p className="text-center mt-3">Already Have an Account?</p>
                 <Link to="/teacher/login" className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">
                     Login
                 </Link>

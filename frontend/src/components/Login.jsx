@@ -25,8 +25,8 @@ function Login() {
 
     return (
         <div className="d-flex justify-content-center align-items-center bg-secondary vh-100">
-            <div className="bg-white p-3 rounded w-25">
-                <h1>Login</h1>
+            <div className="bg-white p-3 rounded w-100 w-md-50 w-lg-25" style={{ maxWidth: "400px" }}>
+                <h1 className="text-center">Login</h1>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-3">
                         <label htmlFor="email"><strong>Email</strong></label>
@@ -50,7 +50,7 @@ function Login() {
                     </div>
                     <button type="submit" className="btn btn-success w-100 rounded-0">Login</button>
                 </form>
-                <p>Don't Have an Account?</p>
+                <p className="text-center mt-3">Don't Have an Account?</p>
                 <Link to="/register" className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">
                     Sign Up
                 </Link>

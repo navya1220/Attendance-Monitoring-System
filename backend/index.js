@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const studentRoutes = require('./routes/studentRoutes');
 const attendanceRoutes = require('./routes/attendanceRoutes');
+const teacherRoutes = require('./routes/teacherRoutes');
 
 const app = express();
 app.use(express.json());
@@ -15,6 +16,7 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
   .catch(err => console.error("MongoDB connection error: ", err));
 
 // Routes
+app.use('/api/teachers', teacherRoutes);
 app.use('/api/students', studentRoutes);
 app.use('/api/attendance', attendanceRoutes);
 

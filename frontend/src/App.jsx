@@ -5,13 +5,19 @@ import Sign from './components/Sign';
 import Login from './components/Login';
 import Home from './components/Home';
 import Dashboard from './components/Dashboard';
+import Credentails from './components/Credentials';
+import TeacherLogin from './components/TeacherLogin';
+import TeacherRegister from './components/teacherRegister';
 
 function App() {
   return (
       <BrowserRouter>
         <Routes>
+          <Route path='/' element={<Credentails/>}></Route>
           <Route path='/register' element={<Sign />} />
+          <Route path="/teacher/register" element={<TeacherRegister/>} />
           <Route path='/login' element={<Login />} />
+          <Route path='/teacher/login' element={<TeacherLogin/>}></Route>
           <Route path='/home' element={<Home />} />
           <Route path="/dashboard" element={<Dashboard />} />
         </Routes>

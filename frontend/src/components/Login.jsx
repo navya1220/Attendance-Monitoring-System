@@ -14,7 +14,7 @@ function Login() {
         .then(result => {
             console.log(result);
             if (result.data.status === "Success") {
-                navigate('/home');
+                navigate('/dashboard');
             } else {
                 console.error('Invalid credentials');
             }
